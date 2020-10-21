@@ -10,5 +10,9 @@
 
 @section('contenido')
     <h2>Este es el body de la página 01.</h2>
-    <a href="{{ url('pagina02') }}" class="btn btn-xs btn-info pull-right">página 02</a>
+    <a href="{{ url('pregunta', ['Historia']) }}" class="btn btn-xs btn-info pullright">Historia</a>
+    <a href="{{ url('pregunta', ['Economia']) }}" class="btn btn-xs btn-info pullright">Economia</a>
+    <a href="{{ url('pregunta', ['Ingles']) }}" class="btn btn-xs btn-info pullright">Inglés</a>
+    <a href="{{ url('api/preguntas', ['Historia']) }}" class="btn btn-xs btn-info pullright">Historia un json</a>
+
 @endsection
